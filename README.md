@@ -6,6 +6,7 @@
 
 <p>Veja abaixo a aplicação rodando em etapas.</p><br>
 
+<p>Se você estiver em um computador e quiser ver o gif de forma limpa e maior, clique com o botão direito do mouse e selecione a opção: "abrir imagem em uma nova guia"</p><br>
 
 <h3>Responsividade</h3>
     <div style="
