@@ -1,6 +1,6 @@
 <h1>Integração com API da EFICAZ marketing</h1>
 
-<p>Esse projeto trata-se de um sistema de cadastro contendo todas as etapas de criação (Creat), exibição (Read), Atualização(Update) e exclusão (Delete) de um usuário.</p>
+<p>Esse projeto trata-se de um sistema de cadastro contendo todas as etapas de criação (Create), exibição (Read), Atualização(Update) e exclusão (Delete) de um usuário.</p>
 
 <p>Esse projeto contém <b>Layout responsivo.</b></p>
 
