@@ -7,7 +7,7 @@
 <p>Veja abaixo a aplicação rodando em etapas.</p><br>
 
 
-<h6>Responsividade</h6>
+<h3>Responsividade</h3>
     <div style="
     border: 10px solid black;
     max-width: 800px;
@@ -17,7 +17,7 @@
     ">
         <img  style="
     border-radius: 10px;
-    " src="https://github.com/Jabes-Enock/eficazmarketing/img/video/responsividade.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
+    " src="https://github.com/Jabes-Enock/eficazmarketing/blob/master/img/video/responsividade.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
     </div>
 <br><br>
 
