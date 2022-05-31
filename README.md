@@ -1,4 +1,4 @@
-#Integração com API da EFICAZ marketing
+<h1>Integração com API da EFICAZ marketing</h1>
 
 <p>Esse projeto trata-se de um sistema de cadastro contendo todas as etapas de criação (Creat), exibição (Read), Atualização(Update) e exclusão (Delete) de um usuário.</p>
 
@@ -21,7 +21,7 @@
     </div>
 <br><br>
 
-<h6>Cadastro</h6>
+<h3>Cadastro</h3>
 <p>O modal de confirmação esta exibindo a mensagem: <b>Aguarde,estamos atualizando os dados de</b><>Nome do usuário<></p>
 <p>Porém já foi corrigida para: <b>Aguarde,estamos cadastrando </b><>Nome do usuário<></p>
 <div style="
@@ -33,11 +33,11 @@
     ">
         <img  style="
     border-radius: 10px;
-    " src="https://github.com/Jabes-Enock/eficazmarketing/https://github.com/Jabes-Enock/eficazmarketing/img/video/cadastro.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
+    " src="https://github.com/Jabes-Enock/eficazmarketing/blob/master/img/video/cadastro.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
     </div>
 <br><br>
 
-<h6>Visualizar usuários cadastrados</h6>
+<h3>Visualizar usuários cadastrados</h3>
 <div style="
     border: 10px solid black;
     max-width: 800px;
@@ -47,11 +47,11 @@
     ">
         <img  style="
     border-radius: 10px;
-    " src="https://github.com/Jabes-Enock/eficazmarketing/img/video/exibir.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
+    " src="https://github.com/Jabes-Enock/eficazmarketing/blob/master/img/video/exibir.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
     </div>
 <br><br>
 
-<h6>Atualização</h6>
+<h3>Atualização</h3>
 <div style="
     border: 10px solid black;
     max-width: 800px;
@@ -61,11 +61,11 @@
     ">
         <img  style="
     border-radius: 10px;
-    " src="https://github.com/Jabes-Enock/eficazmarketing/img/video/atualizacao.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
+    " src="https://github.com/Jabes-Enock/eficazmarketing/blob/master/img/video/atualizacao.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
     </div>
 <br><br>
 
-<h6>Deletar</h6>
+<h3>Deletar</h3>
 <div style="
     border: 10px solid black;
     max-width: 800px;
@@ -75,7 +75,7 @@
     ">
         <img  style="
     border-radius: 10px;
-    " src="https://github.com/Jabes-Enock/eficazmarketing/img/video/deletar.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
+    " src="https://github.com/Jabes-Enock/eficazmarketing/blob/master/img/video/deletar.gif" alt="Gif exibindo o layout responsivo" max-width="100%">
     </div>
 <br><br>
 <br>
