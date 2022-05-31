@@ -1,0 +1,527 @@
+:root {
+    --lightBlue: #56ccf2;
+    --lightGreen: #26AE60;
+    --textIconColor: rgb(101, 102, 103);
+    --iconColor2: rgb(74, 143, 203);
+    --iconColor3: rgb(81, 130, 191);
+    --backgroundColor: rgb(233, 238, 240);
+    --alertColor: rgb(227, 50, 50);
+    --tableBackground: rgb(225, 225, 225);
+    --AlterarButtonBg: rgb(0, 176, 90);
+    --excluirButtonBg: rgb(255, 76, 76);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--backgroundColor) ;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1rem;
+    max-width: 130px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.section-group .button {
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--lightBlue);
+    border-radius: 4px;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.section-group .button .icon {
+    width: 20px;
+    margin-right: 1rem;
+}
+
+.cadastro {
+    background-color: white;
+    padding: 1rem;
+}
+
+.cadastro-title {
+    width: 100%;
+    text-align: center;
+    color: var(--iconColor2);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cadastro-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    color: var(--textIconColor);
+}
+.cadastro-section div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.cadastro-section div input
+ {
+    
+    margin-top: 0.5rem;
+    border: 1px solid var(--textIconColor);
+    border-radius: 4px;
+    padding: 8px 1rem;
+    outline: none;
+}
+
+.cadastro-section div input:focus {
+    border: 1px solid var(--lightBlue);
+    box-shadow: 0 0 10px 0 rgba(109, 191, 223);
+}
+
+.cadastro-section div small {
+    color: var(--alertColor);
+    margin: 0.5rem 0 ;
+}
+
+.cadastro .button-section {
+    width: 100%;
+    text-align: right;
+}
+
+.cadastro .button-section .cadastrar-button {
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cadastro .button-section .cadastrar-button#cadastrar-button {
+    background-color: var(--lightGreen);
+}
+.cadastro .button-section .cadastrar-button#atualizar-button {
+    background-color: var(--iconColor2);
+}
+
+.lista-de-usuarios{
+    background-color: white;
+    overflow-x: auto;
+}
+
+.lista-de-usuarios-lista {
+    width: 100%;
+    min-width: 800px;
+    padding: 1rem 1rem 1rem 2.5rem;
+    color: var(--textIconColor);
+}
+
+.lista-de-usuarios-filtros {
+    width: 100%;
+    min-width: 800px;
+    padding:  1rem 2.5rem ;
+    background: var(--tableBackground);
+    border-top: 0.5px solid rgb(189, 188, 188);
+    border-bottom: 1px solid rgb(189, 188, 188);
+}
+
+table {
+    width: 100%;
+    min-width: 800px;
+    margin: 0;
+    background: #FFFFFF;
+    border-collapse: collapse;
+}
+
+tr {
+    vertical-align: baseline;
+    border-bottom: 0.5px solid var(--tableBackground);
+}
+
+ th {
+    padding:1rem 1rem 1rem 2.5rem;
+    text-align: left;
+    vertical-align: middle;
+}
+ tr, td{
+    padding:0.5rem 0.5rem 0.5rem 2.5rem;
+    text-align: left;
+}
+tr th:last-child {
+    text-align: right;
+    padding:0.5rem 2.5rem 0.5rem 2.5rem;
+}
+
+tr td:last-child {
+    text-align: right;
+    padding:0.5rem 2.5rem 0.5rem 2.5rem;
+}
+
+td {
+    border-bottom: 1px solid var(--tableBackground);
+    padding-bottom: 1rem;
+}
+
+th {
+    background: var(--tableBackground);
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+
+.tabela-de-usuários-body-action {
+    display: flex;
+    flex-direction: column;
+}
+.tabela-de-usuários-body-action a {
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    color: white;
+
+}
+
+.tabela-de-usuários-body-action a.alterar{
+    background-color: var(--AlterarButtonBg);
+    margin-top: 1.5rem;
+}
+
+
+.tabela-de-usuários-body-action a.excluir {
+    background-color: var(--excluirButtonBg);
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.background-dark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(86,86,86, 0.1);
+    display: grid;
+    place-items: center;
+}
+
+.center {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.modal-confirmar-exclusao {
+    position: fixed;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+.modal-confirmar-exclusao .usuario-a-ser-removido {
+    color: var(--lightGreen);
+}
+
+.modal-confirmar-exclusao h4 {
+    margin-bottom: 3rem;
+}
+
+.modal-confirmar-exclusao p {
+    margin: 1rem 0;
+}
+
+.modal-confirmar-exclusao div {
+    width: 100%;
+    text-align: right;
+}
+
+.modal-confirmar-exclusao div button {
+    outline: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.modal-confirmar-exclusao div button.nao-excluir-usuario {
+    background-color: var(--iconColor3);
+}
+
+.modal-confirmar-exclusao div button.excluir-usuario {
+    background-color: var(--alertColor);
+}
+
+.modal-deletado-sucesso,
+.modal-atualizado-sucesso,
+.modal-cadastrado-sucesso  {
+    display: grid;
+    place-items: center;
+}
+
+.modal-deletado-sucesso .circle,
+.modal-atualizado-sucesso .circle,
+.modal-cadastrado-sucesso .circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin: 0.1rem;
+    position: relative;
+}
+
+.modal-deletado-sucesso .circle-first,
+.modal-atualizado-sucesso .circle-first,
+.modal-cadastrado-sucesso .circle-first {
+    animation: move 1s linear infinite ;
+    background-color: var(--iconColor3);
+}
+
+.modal-deletado-sucesso .circle-second,
+.modal-atualizado-sucesso .circle-second,
+.modal-cadastrado-sucesso .circle-second {
+    animation: move 1s 0.33s linear infinite ;
+    background-color: var(--excluirButtonBg);
+}
+
+.modal-deletado-sucesso .circle-third,
+.modal-atualizado-sucesso .circle-third,
+.modal-cadastrado-sucesso .circle-third {
+    animation: move 1s 0.66s linear infinite ;
+    background-color: var(--AlterarButtonBg);
+}
+
+
+.modal-deletado-sucesso .usuario-foi-removido {
+    color: var(--alertColor);
+}
+
+.modal-atualizado-sucesso .usuario-foi-atualizado {
+    color: blue;
+}
+
+.modal-cadastrado-sucesso .usuario-foi-cadastrado {
+    color: green;
+}
+
+@keyframes move {
+    0%,100% {
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(50px);
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+}
+
+
+/* ==================
+cell screen
+==================*/
+@media only screen and (max-width: 500px) {
+    .cadastro .button-section .cadastrar-button {
+        width: 100%;
+    }
+}
+
+
+/* ==================
+small screen
+==================*/
+@media only screen and (min-width: 500px) {
+
+    .section-group {
+        flex-direction: row;
+    }
+    
+    .section-group .button:nth-child(1){
+        margin-right: 1rem; 
+    }
+
+    .cadastro,
+    .lista-de-usuarios {
+        border: 1px solid lightgray;
+        margin: 0 1rem 1rem;
+    }
+}
+
+
+/* ==================
+tablet, computer
+==================*/
+
+@media only screen and (min-width: 767px) {
+ 
+   
+    .section {
+        margin-bottom: 2rem;
+        
+    }
+
+ 
+   
+    .cadastro-section {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    .cadastro-section div.cidade-uf {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cadastro-section div.cidade-uf .cidade-uf-cidade {
+        width: 65%;
+    }
+    .cadastro-section div.cidade-uf .cidade-uf-uf {
+        width: 30%;
+    }
+
+    .cadastro .button-section {
+        text-align: right;
+    }
+
+
+ 
+
+    
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .section-group .button:hover,
+    .button:hover .icon,
+    .section-group .button.active:hover,
+    .button.active:hover .icon{
+        background-color: white;
+        stroke: var(--textIconColor);
+        color: var(--textIconColor);
+    }
+
+    .cadastro .button-section .cadastrar-button#cadastrar-button:hover {
+        background-color: green;
+    }
+
+    .cadastro .button-section .cadastrar-button#atualizar-button:hover {
+        background-color: blue;
+    }
+
+   
+
+
+    .tabela-de-usuários-body-action a.alterar:hover{
+        background-color: darkgreen;
+    }
+
+    .tabela-de-usuários-body-action a.excluir:hover,
+    .modal-confirmar-exclusao div button.excluir-usuario:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .modal-confirmar-exclusao div button.nao-excluir-usuario:hover {
+        background-color: blue;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .section {
+        flex-direction: row;
+    }
+
+    .section-group {
+        flex-direction: column;
+        padding: 0;
+        width: 20%;
+    }
+
+    /* .section-group .button:nth-child(1){
+        margin-right: 0rem;
+    } */
+
+    .cadastro,
+    .lista-de-usuarios {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .tabela-de-usuários-body-action button {
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======
+special class
+
+==========*/
+
+.section-group .button.active {
+    background-color: var(--iconColor3);
+}
+
+.hidden {
+    display: none;
+}

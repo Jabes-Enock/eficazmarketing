@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo">
+          <img src="img/logo.svg" alt="Eficaz marketing" />
+        </div>
+      </header>
+
+      <section class="section">
+        <div class="section-group">
+          <button class="button active" id="sessao-cadastro">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+            <div><p class="cadastro-frase">Cadastro</p></div>
+          </button>
+          <button class="button" id="sessao-listar-usuarios">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+
+            <div><p>Lista de cadastrados</p></div>
+          </button>
+        </div>
+
+        <div class="cadastro">
+          <div class="cadastro-title">
+            <h1>Cadastro</h1>
+          </div>
+          <div class="cadastro-section">
+            <div>
+              <p>E-mail pessoal do candidato</p>
+              <input type="email" required id="seu_email" />
+              <small class="seu_email hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>Nome completo</p>
+              <input type="text" required id="nome" />
+              <small class="nome hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>E-mail</p>
+              <input type="email" required id="email" />
+              <small class="email hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>Telefone (DDD)</p>
+              <input type="number" required id="telefone" />
+              <small class="telefone hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>Rua</p>
+              <input type="text" required id="rua" />
+              <small class="rua hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>N°</p>
+              <input type="number" required id="numero" />
+              <small class="numero hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>Complemento</p>
+              <input type="text" required id="complemento" />
+              <small class="complemento hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>Bairro</p>
+              <input type="text" required id="bairro" />
+              <small class="bairro hidden">Este campo é obrigatório.</small>
+            </div>
+            <div>
+              <p>CEP</p>
+              <input type="text" required id="cep" />
+              <small class="cep hidden">Este campo é obrigatório.</small>
+            </div>
+            <div class="cidade-uf">
+              <div class="cidade-uf-cidade">
+                <p>Cidade</p>
+                <input type="text" required id="cidade"/>
+                <small class="cidade hidden">Este campo é obrigatório.</small>
+              </div>
+              <div class="cidade-uf-uf">
+                <p>UF</p>
+                <input type="text" required id="uf" placeholder="SP, RJ, SC ..." />
+                <small class="uf hidden">Este campo é obrigatório.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-section">
+            <button class="cadastrar-button" id="cadastrar-button">Cadastrar</button>
+          </div>
+          <div class="button-section">
+            <button class="cadastrar-button hidden" id="atualizar-button">Atualizar</button>
+          </div>
+        </div>
+
+        <div class="lista-de-usuarios hidden">
+          <div class="lista-de-usuarios-lista">
+            <p>Lista de Cadastrados</p>
+          </div>
+          <div class="lista-de-usuarios-filtros">
+            <h2>FILTROS</h2>
+          </div>
+          
+           <table class="tabela-de-usuários"></table> 
+        </div>
+      </section>
+    </div>
+<!-- 
+  ==========================================
+  MENSAGENS DO STATUS DA REQUISIÇÃO - MODAIS
+  ==========================================
+ -->
+
+ <!--modal-confirmar-delete  -->
+    <div class="modal-confirmar-delete background-dark hidden"></div>
+    <div class="modal-confirmar-delete center hidden">
+      <div class="modal-confirmar-delete modal-confirmar-exclusao hidden">
+        <h4>Você esta excluindo o(a) usuário(a) <span class="usuario-a-ser-removido"></span></h4>
+        <p>Tem certeza que deseja excluir este usuário?</p>
+        <div>
+          <button class="nao-excluir-usuario">Não</button>
+          <button class="excluir-usuario">Sim</button>
+        </div>
+      </div>
+    </div>
+
+<!--modal-deletado-sucesso  -->
+    <div class="modal-deletado-sucesso background-dark hidden"></div>
+    <div class="modal-deletado-sucesso  center hidden">
+      <div class="modal-deletado-sucesso  modal-confirmar-exclusao hidden">
+
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <br>
+        <p>Aguarde,estamos removendo <span class="usuario-foi-removido"></span>.</p>
+
+        
+      </div>
+    </div>
+
+<!--modal-atualizado-sucesso   -->
+    <div class="modal-atualizado-sucesso background-dark hidden"></div>
+    <div class="modal-atualizado-sucesso  center hidden">
+      <div class="modal-atualizado-sucesso  modal-confirmar-exclusao hidden">
+
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <br>
+        <p>Aguarde,estamos atualizando os dados de <span class="usuario-foi-atualizado"></span>.</p>
+
+        
+      </div>
+    </div>
+    
+<!--modal-cadastrado-sucesso   -->
+<div class="modal-cadastrado-sucesso background-dark hidden"></div>
+    <div class="modal-cadastrado-sucesso  center hidden">
+      <div class="modal-cadastrado-sucesso  modal-confirmar-exclusao hidden">
+
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <div class="circle circle-first"></div>
+        <div class="circle circle-second"></div>
+        <div class="circle circle-third"></div>
+        <br>
+        <p>Aguarde,estamos atualizando os dados de <span class="usuario-foi-cadastrado"></span>.</p>
+
+        
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

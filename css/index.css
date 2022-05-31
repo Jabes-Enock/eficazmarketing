@@ -1,0 +1,156 @@
+:root {
+    --lightBlue: #56ccf2;
+    --lightGreen: #26AE60;
+    --textIconColor: rgb(101, 102, 103);
+    --iconColor2: rgb(74, 143, 203);
+    --iconColor3: rgb(81, 130, 191);
+    --backgroundColor: rgb(233, 238, 240);
+    --alertColor: rgb(227, 50, 50);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--backgroundColor) ;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.section-group {
+  
+  display: grid;
+  gap: 1rem;
+}
+
+   .button {
+        display: flex;
+        padding: 0.5rem 1rem 0.5rem 1.5rem;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: var(--lightBlue);
+        border-radius: 4px;
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .button:hover,
+    .button:hover .icon{
+        background-color: white;
+        stroke: var(--textIconColor);
+        color: var(--textIconColor);
+    }
+    .cadastrar-button:hover {
+        background-color: green;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+
+
+.cadastro,
+.lista-de-usuarios{}
+
+.cadastro-title {
+    width: 100%;
+    text-align: center;
+    color: var(--iconColor2);
+    text-transform: uppercase;
+}
+
+.cadastro-col {
+}
+
+.cadastro-col div
+ {
+    flex-direction:  column;
+}
+
+.cadastro-col div input
+ {
+    
+    margin-top: 0.5rem;
+    border: 1px solid var(--textIconColor);
+    border-radius: 4px;
+    padding: 8px 1rem;
+    outline: none;
+}
+
+.cadastro-col div input:focus {
+    border: 1px solid var(--lightBlue);
+    box-shadow: 0 0 10px 0 rgba(109, 191, 223);
+}
+
+.cadastro-col div small {
+    color: var(--alertColor);
+    margin: 0.5rem 0 ;
+}
+
+.button-section {
+    width: 100%;
+    text-align: right;
+    
+}
+
+.cadastrar-button {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 2rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--lightGreen);
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+.section
+
+
+@media only screen and (min-width: 767px) {
+ 
+
+ 
+
+    
+}
+
+.active {
+    background-color: var(--iconColor3);
+}
+
+.hidden {
+    display: none;
+}
+
+.danger {
+    color: var(--alertColor);
+}
+
+
+
+
+
+
